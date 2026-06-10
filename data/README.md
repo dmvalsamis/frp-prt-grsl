@@ -13,7 +13,7 @@ The assembled model-input cube **`dataset_v3.h5`** and the 121 per-event hourly
 tables are not committed to this git repo. They are published as a separate
 **Zenodo deposit (CC BY 4.0)** with its own DOI:
 
-**Data DOI: <DATA DOI — fill after publishing the Zenodo record>**
+**Data DOI (concept, always-latest): 10.5281/zenodo.20627568**
 
 Fetch them into this directory (stdlib only, no extra deps):
 

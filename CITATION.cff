@@ -12,7 +12,7 @@ type: software
 license: MIT
 version: "1.0.0"
 date-released: "2026-06-09"  # <FILL: actual release date on publication>
-repository-code: "https://github.com/<ORG_OR_USER>/frp-prt-grsl"  # <FILL: GitHub URL>
+repository-code: "https://github.com/dmvalsamis/frp-prt-grsl"
 authors:
   - family-names: "Valsamis"
     given-names: "Dimitrios"
@@ -68,7 +68,7 @@ references:
       - family-names: "Valsamis"
         given-names: "Dimitrios"
     year: 2026
-    doi: "10.5281/zenodo.0000000"       # <FILL: Zenodo DATA DOI>
+    doi: "10.5281/zenodo.20627568"   # concept DOI (always resolves to the latest version)
     license: CC-BY-4.0
     notes: >-
       Derived from ERA5 (Copernicus C3S/ECMWF) and EUMETSAT LSA SAF FRP-PIXEL

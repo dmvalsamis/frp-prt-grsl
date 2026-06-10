@@ -1,56 +1,43 @@
 """Fetch the derived dataset (dataset_v3) from its Zenodo deposit into ``data/``.
 
 The licensed-derived data layer (the model-ready cube, the manifest, the
-normalization stats, and the per-event hourly tables) is hosted on Zenodo with
-its own DOI rather than committed to this code repository. This script downloads
-that record into the repo's ``data/`` directory so the training/evaluation
-scripts can find it (or set ``FRP_DATA_DIR`` to wherever you place it).
+normalization stats, and the per-event hourly tables) is published on Zenodo
+(CC BY 4.0) with its own DOI rather than committed to this code repository.
+This script downloads the Zenodo deposit archive and extracts it into the repo's
+``data/`` directory so the training/evaluation scripts can find it (or set
+``FRP_DATA_DIR`` to wherever you place it).
 
 Usage
 -----
     python scripts/fetch_data.py
-    # or override the record:
-    FRP_ZENODO_RECORD=1234567 python scripts/fetch_data.py
+    # override the record (e.g. to pin an exact version):
+    FRP_ZENODO_RECORD=<recid> python scripts/fetch_data.py
 
-No third-party dependencies (standard library only). Verifies MD5 checksums
-reported by the Zenodo API when available.
-
-After publishing the Zenodo deposit, set ZENODO_RECORD_ID below (or always pass
-the FRP_ZENODO_RECORD env var) and update the DOI in README.md / data/README.md /
-CITATION.cff.
+The default record id is the Zenodo CONCEPT id (DOI 10.5281/zenodo.20627568),
+which always resolves to the latest published version. Standard library only.
 """
-import hashlib
+import io
 import json
 import os
 import sys
 import urllib.request
+import zipfile
 from pathlib import Path
 
-# <FILL: numeric Zenodo record id, e.g. "1234567">. The env var overrides this.
-ZENODO_RECORD_ID = os.environ.get("FRP_ZENODO_RECORD", "<ZENODO_RECORD_ID>")
+# Concept (all-versions) Zenodo record id — always resolves to the latest version.
+# Override with the FRP_ZENODO_RECORD env var to pin a specific version.
+ZENODO_RECORD_ID = os.environ.get("FRP_ZENODO_RECORD", "20627568")
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = Path(os.environ.get("FRP_DATA_DIR", REPO_ROOT / "data"))
 API = "https://zenodo.org/api/records/{}"
 
-
-def _md5(path: Path) -> str:
-    h = hashlib.md5()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(1 << 20), b""):
-            h.update(chunk)
-    return h.hexdigest()
+# Deposit-level docs that must NOT overwrite the repo's own data/ docs.
+_SKIP = {"README.md", "LICENSE_AND_ATTRIBUTION.md"}
 
 
 def main() -> int:
-    if ZENODO_RECORD_ID.startswith("<"):
-        sys.exit(
-            "Zenodo record id not set. Publish the deposit, then either edit "
-            "ZENODO_RECORD_ID in this file or run with FRP_ZENODO_RECORD=<id>."
-        )
-
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "hourly").mkdir(exist_ok=True)
 
     print(f"[fetch_data] querying Zenodo record {ZENODO_RECORD_ID} ...")
     with urllib.request.urlopen(API.format(ZENODO_RECORD_ID)) as r:
@@ -58,30 +45,31 @@ def main() -> int:
 
     files = meta.get("files", [])
     if not files:
-        sys.exit("[fetch_data] record has no files (check the record id / DOI).")
+        sys.exit("[fetch_data] record has no files (check the DOI / record id).")
 
-    for f in files:
-        key = f["key"]                       # e.g. dataset_v3.h5 or hourly/foo_hourly.csv
-        url = f["links"].get("self") or f["links"].get("download")
-        want_md5 = (f.get("checksum") or "").replace("md5:", "")
-        dest = DATA_DIR / key
-        dest.parent.mkdir(parents=True, exist_ok=True)
+    # The deposit is a single archive; fall back to the first file if not named .zip.
+    entry = next((f for f in files if str(f.get("key", "")).endswith(".zip")), files[0])
+    key = entry["key"]
+    url = entry["links"].get("self") or entry["links"].get("download")
 
-        if dest.exists() and want_md5 and _md5(dest) == want_md5:
-            print(f"[fetch_data] ok (cached): {key}")
-            continue
+    print(f"[fetch_data] downloading {key} ({entry.get('size', '?')} bytes) ...")
+    with urllib.request.urlopen(url) as resp:
+        blob = resp.read()
 
-        print(f"[fetch_data] downloading {key} ...")
-        urllib.request.urlretrieve(url, dest)
+    print(f"[fetch_data] extracting into {DATA_DIR} ...")
+    with zipfile.ZipFile(io.BytesIO(blob)) as z:
+        members = [m for m in z.namelist()
+                   if not m.endswith("/") and os.path.basename(m) not in _SKIP]
+        z.extractall(DATA_DIR, members=members)
 
-        if want_md5:
-            got = _md5(dest)
-            if got != want_md5:
-                sys.exit(f"[fetch_data] CHECKSUM MISMATCH for {key}: {got} != {want_md5}")
+    cube = DATA_DIR / "dataset_v3.h5"
+    if not cube.exists():
+        sys.exit(f"[fetch_data] ERROR: dataset_v3.h5 not found after extraction in {DATA_DIR}")
 
+    n_hourly = len(list((DATA_DIR / "hourly").glob("*_hourly.csv"))) if (DATA_DIR / "hourly").exists() else 0
     print(f"[fetch_data] done -> {DATA_DIR}")
-    print("[fetch_data] expected: dataset_v3.h5, dataset_v3_manifest.csv, "
-          "normalization_params_v3.json, hourly/*.csv")
+    print(f"[fetch_data]   dataset_v3.h5, dataset_v3_manifest.csv, "
+          f"normalization_params_v3.json, hourly/ ({n_hourly} files)")
     return 0
 
 

@@ -90,7 +90,7 @@ docs/            reproducibility map; SHA-256 integrity hash table; honest
 - **Meteorology:** **ERA5** (Copernicus C3S) — obtain from the Copernicus
   Climate Data Store. Acknowledge ECMWF/Copernicus.
 - **Derived model-ready cube:** published on **Zenodo (CC BY 4.0)**, DOI
-  **`<DATA DOI — fill in>`**; fetch with `python scripts/fetch_data.py`.
+  **`10.5281/zenodo.20627568`** (concept DOI, always-latest); fetch with `python scripts/fetch_data.py`.
 - Raw granules are **not** redistributed. See [`data/README.md`](data/README.md)
   and [`data/DATA_LICENSE.md`](data/DATA_LICENSE.md).
 

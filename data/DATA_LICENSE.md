@@ -6,7 +6,7 @@ from two openly licensed Earth-observation sources that must be acknowledged.
 
 - **Derived dataset (Zenodo, CC BY 4.0):** `dataset_v3.h5`, the manifest, the
   normalization stats, and the per-event hourly tables. DOI:
-  **<DATA DOI — fill after publishing the Zenodo record>**. Fetch with
+  **10.5281/zenodo.20627568** (concept DOI; resolves to the latest version). Fetch with
   `python scripts/fetch_data.py`.
 - **ERA5** — Copernicus Climate Change Service (C3S) / ECMWF. Open Copernicus
   Licence; redistribution of derived products permitted with attribution.
