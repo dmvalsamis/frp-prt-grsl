@@ -16,7 +16,7 @@ repository-code: "https://github.com/<ORG_OR_USER>/frp-prt-grsl"  # <FILL: GitHu
 authors:
   - family-names: "Valsamis"
     given-names: "Dimitrios"
-    orcid: "https://orcid.org/0000-0000-0000-0000"  # <FILL: ORCID if available>
+    orcid: "https://orcid.org/0009-0002-6699-4426"  # <FILL: ORCID if available>
     affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
     email: "dvalsamis@iti.gr"
   - family-names: "Papaioannou"
