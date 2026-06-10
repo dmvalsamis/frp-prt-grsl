@@ -1,0 +1,40 @@
+{
+  "recipe": "6 FRP lags {1,2,3,6,12,24h} @ last step; per-horizon RidgeCV alphas=[0.1,1,10,100] cv=5; fit on train; clip>=0",
+  "per_horizon_best_alpha": [
+    10.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "per_event": {
+    "volos_2023": {
+      "SS_fire_t6": 0.054803722747227335,
+      "n_fire": 89
+    },
+    "varnavas_2024": {
+      "SS_fire_t6": -2.331324024249156,
+      "n_fire": 7
+    },
+    "valmaior_2024": {
+      "SS_fire_t6": 0.13337566176208915,
+      "n_fire": 69
+    },
+    "corinthos_2024": {
+      "SS_fire_t6": -0.16241450540534474,
+      "n_fire": 21
+    }
+  },
+  "X_ar_ridge_test_mean_SS_fire_t6": -0.5763897862862961,
+  "Y_prt_full_margin": 0.8761897862862962,
+  "prt_full_mean_locked": 0.2998,
+  "ar_ridge_val_reference": 0.1537,
+  "note": "Fixed baseline test evaluation; fit on train only; non-budget; selects nothing."
+}

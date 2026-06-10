@@ -1,0 +1,150 @@
+{
+  "config_label": "row2_ssat_windfeats",
+  "n_seeds": 10,
+  "val_SS_mean": 0.2652892141959998,
+  "val_SS_std": 0.015657222855720077,
+  "val_SS_values": [
+    0.285761334153095,
+    0.2698188985231452,
+    0.26751791843039746,
+    0.2664974401869065,
+    0.2639989851055673,
+    0.2809120716625021,
+    0.24020994020523526,
+    0.2671569788679876,
+    0.2369244259837718,
+    0.2740941488413895
+  ],
+  "per_seed": [
+    {
+      "seed": 0,
+      "best_epoch": 6,
+      "best_val_SS_paper": 0.285761334153095,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.4044013400603691,
+        "caceres_2023": 0.29884762079621485,
+        "mandra_2023": 0.34861592841273936,
+        "rhodes_2023": 0.09118044734305686,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_000.pt"
+    },
+    {
+      "seed": 1,
+      "best_epoch": 7,
+      "best_val_SS_paper": 0.2698188985231452,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.49200896972667263,
+        "caceres_2023": 0.21935678489003752,
+        "mandra_2023": 0.2821546973400254,
+        "rhodes_2023": 0.08575514213584523,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_001.pt"
+    },
+    {
+      "seed": 2,
+      "best_epoch": 9,
+      "best_val_SS_paper": 0.26751791843039746,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.43887354771529574,
+        "caceres_2023": 0.2551170845181455,
+        "mandra_2023": 0.3789129967364008,
+        "rhodes_2023": -0.0028319552482523047,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_002.pt"
+    },
+    {
+      "seed": 3,
+      "best_epoch": 6,
+      "best_val_SS_paper": 0.2664974401869065,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.3995653434946098,
+        "caceres_2023": 0.24347109633989517,
+        "mandra_2023": 0.3702627148801051,
+        "rhodes_2023": 0.05269060603301612,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_003.pt"
+    },
+    {
+      "seed": 4,
+      "best_epoch": 7,
+      "best_val_SS_paper": 0.2639989851055673,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.4461202110887229,
+        "caceres_2023": 0.2078120248050236,
+        "mandra_2023": 0.31907493607018855,
+        "rhodes_2023": 0.08298876845833425,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_004.pt"
+    },
+    {
+      "seed": 5,
+      "best_epoch": 8,
+      "best_val_SS_paper": 0.2809120716625021,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.408708581747226,
+        "caceres_2023": 0.2576578303674413,
+        "mandra_2023": 0.28069381505564717,
+        "rhodes_2023": 0.17658805947969392,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_005.pt"
+    },
+    {
+      "seed": 6,
+      "best_epoch": 7,
+      "best_val_SS_paper": 0.24020994020523526,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.3402792581124717,
+        "caceres_2023": 0.23175471543188364,
+        "mandra_2023": 0.2783670326147999,
+        "rhodes_2023": 0.11043875466178577,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_006.pt"
+    },
+    {
+      "seed": 7,
+      "best_epoch": 4,
+      "best_val_SS_paper": 0.2671569788679876,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.40629113887913515,
+        "caceres_2023": 0.22720623501621584,
+        "mandra_2023": 0.2883895095947697,
+        "rhodes_2023": 0.14674103198182975,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_007.pt"
+    },
+    {
+      "seed": 8,
+      "best_epoch": 6,
+      "best_val_SS_paper": 0.2369244259837718,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.38817150897644714,
+        "caceres_2023": 0.30385973292698787,
+        "mandra_2023": 0.2030725713735726,
+        "rhodes_2023": 0.05259389065807962,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_008.pt"
+    },
+    {
+      "seed": 9,
+      "best_epoch": 8,
+      "best_val_SS_paper": 0.2740941488413895,
+      "best_per_event": {
+        "alexandroupolis_2023": 0.4369284295835689,
+        "caceres_2023": 0.2867502909977302,
+        "mandra_2023": 0.32221480372488287,
+        "rhodes_2023": 0.050483071059376106,
+        "split_2017": NaN
+      },
+      "ckpt_path": "E:\\GRSL_Wildfire\\FRP_Methodology\\redesign\\stage2\\checkpoints\\row2\\seed_009.pt"
+    }
+  ]
+}

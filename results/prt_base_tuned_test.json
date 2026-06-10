@@ -1,0 +1,212 @@
+{
+  "C_FROZEN": {
+    "config": "C_FROZEN",
+    "headline_ensemble": {
+      "rule": "log_mean_then_expm1_then_clip0",
+      "test_SS_fire_t6": 0.19686998300723318,
+      "per_event": {
+        "corinthos_2024": {
+          "n_fire": 21,
+          "ss": 0.0842415404732475
+        },
+        "valmaior_2024": {
+          "n_fire": 69,
+          "ss": 0.19338848182975943
+        },
+        "varnavas_2024": {
+          "n_fire": 7,
+          "ss": 0.18373691323597052
+        },
+        "volos_2023": {
+          "n_fire": 89,
+          "ss": 0.3261129964899553
+        }
+      },
+      "bootstrap_95CI": [
+        0.11152827581237548,
+        0.2905189756764591
+      ],
+      "bootstrap_mean_of_resamples": 0.1963858852796751,
+      "n_boot": 10000,
+      "rng_seed": 42
+    },
+    "robustness": {
+      "median_ensemble_SS": 0.18430755125152445,
+      "trimmed_mean_ensemble_SS_drop_top_bottom_per_element": 0.18172952291036137
+    },
+    "calibration_iqr_fraction": 0.24193548387096775,
+    "per_seed_test_SS_mean_pm_sd": [
+      0.14325562076903928,
+      0.05329342672215459
+    ],
+    "per_seed_test_SS_values": [
+      0.05870540182370784,
+      0.1551545412277147,
+      0.20465732118581986,
+      0.09773997749787394,
+      0.1175389036288774,
+      0.20861157855714174,
+      0.20336762655826088,
+      0.11667307279178346,
+      0.17405494988310077,
+      0.09605283453611219
+    ],
+    "per_seed_checkpoints": [
+      {
+        "file": "C_FROZEN_seed_00.pt",
+        "val_SS_selection": 0.1723774295288175,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_FROZEN_seed_01.pt",
+        "val_SS_selection": 0.18859628643959508,
+        "best_epoch": 3
+      },
+      {
+        "file": "C_FROZEN_seed_02.pt",
+        "val_SS_selection": 0.2590947337097213,
+        "best_epoch": 4
+      },
+      {
+        "file": "C_FROZEN_seed_03.pt",
+        "val_SS_selection": 0.16793681769557706,
+        "best_epoch": 3
+      },
+      {
+        "file": "C_FROZEN_seed_04.pt",
+        "val_SS_selection": 0.17606089087380908,
+        "best_epoch": 8
+      },
+      {
+        "file": "C_FROZEN_seed_05.pt",
+        "val_SS_selection": 0.24472436651721544,
+        "best_epoch": 4
+      },
+      {
+        "file": "C_FROZEN_seed_06.pt",
+        "val_SS_selection": 0.25315071112760107,
+        "best_epoch": 4
+      },
+      {
+        "file": "C_FROZEN_seed_07.pt",
+        "val_SS_selection": 0.15180585242484004,
+        "best_epoch": 3
+      },
+      {
+        "file": "C_FROZEN_seed_08.pt",
+        "val_SS_selection": 0.23218451737455262,
+        "best_epoch": 4
+      },
+      {
+        "file": "C_FROZEN_seed_09.pt",
+        "val_SS_selection": 0.1867230859531797,
+        "best_epoch": 3
+      }
+    ]
+  },
+  "C_HONEST": {
+    "config": "C_HONEST",
+    "headline_ensemble": {
+      "rule": "log_mean_then_expm1_then_clip0",
+      "test_SS_fire_t6": 0.24019781320244404,
+      "per_event": {
+        "corinthos_2024": {
+          "n_fire": 21,
+          "ss": 0.1367787172211299
+        },
+        "valmaior_2024": {
+          "n_fire": 69,
+          "ss": 0.17018642148094087
+        },
+        "varnavas_2024": {
+          "n_fire": 7,
+          "ss": 0.2504581949094047
+        },
+        "volos_2023": {
+          "n_fire": 89,
+          "ss": 0.40336791919830073
+        }
+      },
+      "bootstrap_95CI": [
+        0.15348256935103538,
+        0.34507254476896077
+      ],
+      "bootstrap_mean_of_resamples": 0.2404237049599937,
+      "n_boot": 10000,
+      "rng_seed": 42
+    },
+    "robustness": {
+      "median_ensemble_SS": 0.21166366636332057,
+      "trimmed_mean_ensemble_SS_drop_top_bottom_per_element": 0.23388203408445266
+    },
+    "calibration_iqr_fraction": 0.22043010752688172,
+    "per_seed_test_SS_mean_pm_sd": [
+      0.1727513357377367,
+      0.06812192301201236
+    ],
+    "per_seed_test_SS_values": [
+      0.20059028569271586,
+      0.06555769112116272,
+      0.18689716645709753,
+      0.22841774965078349,
+      0.21990180097088793,
+      0.17920784420886673,
+      0.2526079613529359,
+      0.17316237907639848,
+      0.18069115665446267,
+      0.04047932219205577
+    ],
+    "per_seed_checkpoints": [
+      {
+        "file": "C_HONEST_seed_00.pt",
+        "val_SS_selection": 0.23058586719289662,
+        "best_epoch": 9
+      },
+      {
+        "file": "C_HONEST_seed_01.pt",
+        "val_SS_selection": 0.23343515330759143,
+        "best_epoch": 4
+      },
+      {
+        "file": "C_HONEST_seed_02.pt",
+        "val_SS_selection": 0.2561783679232431,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_HONEST_seed_03.pt",
+        "val_SS_selection": 0.22639351905371052,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_HONEST_seed_04.pt",
+        "val_SS_selection": 0.2310867545647052,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_HONEST_seed_05.pt",
+        "val_SS_selection": 0.23436092176211062,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_HONEST_seed_06.pt",
+        "val_SS_selection": 0.2011727208241684,
+        "best_epoch": 7
+      },
+      {
+        "file": "C_HONEST_seed_07.pt",
+        "val_SS_selection": 0.20320273463272986,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_HONEST_seed_08.pt",
+        "val_SS_selection": 0.2670901657055451,
+        "best_epoch": 5
+      },
+      {
+        "file": "C_HONEST_seed_09.pt",
+        "val_SS_selection": 0.24911538054805066,
+        "best_epoch": 8
+      }
+    ]
+  }
+}

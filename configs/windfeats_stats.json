@@ -1,0 +1,7 @@
+{
+  "feature_names": ["shear_signed", "wind_var_12h", "ws850_max_12h", "hdw_product", "wind_frp_coupling"],
+  "means": [3.5475058555603027, 1.4040031433105469, 7.869688510894775, 4.791967391967773, 10948.5849609375],
+  "stds": [3.1014783382415770, 0.7042239904403687, 3.7663280963897705, 4.685596942901611, 33393.3671875],
+  "sha256_canonical": "b7d0fc8186d367d39b1b1072afa7cb444615d262fbee892a7630fa5a9ddf672a",
+  "note": "Frozen train-derived WindFeats statistics. SHA-256 is over the canonical JSON of {feature_names, means, stds} with sorted keys and no whitespace."
+}

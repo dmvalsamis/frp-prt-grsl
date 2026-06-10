@@ -1,0 +1,81 @@
+cff-version: 1.2.0
+message: "If you use this software or the PRT model, please cite the paper below."
+title: "PRT: A Persistence-Residual Transformer for sub-daily Fire Radiative Power trajectory forecasting"
+abstract: >-
+  Reference implementation, deployed model checkpoints, and reproducibility
+  materials for the IEEE GRSL letter on sub-daily Fire Radiative Power (FRP)
+  trajectory forecasting over Mediterranean wildfires using a
+  Persistence-Residual Transformer (PRT) with Skill-Score-Aligned Training
+  (SSAT) and engineered wind features (WindFeats), driven by MSG-SEVIRI FRP
+  and ERA5 covariates.
+type: software
+license: MIT
+version: "1.0.0"
+date-released: "2026-06-09"  # <FILL: actual release date on publication>
+repository-code: "https://github.com/<ORG_OR_USER>/frp-prt-grsl"  # <FILL: GitHub URL>
+authors:
+  - family-names: "Valsamis"
+    given-names: "Dimitrios"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # <FILL: ORCID if available>
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+    email: "dvalsamis@iti.gr"
+  - family-names: "Papaioannou"
+    given-names: "Vassilios"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Moumtzidou"
+    given-names: "Anastasia"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Gialampoukidis"
+    given-names: "Ilias"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Vrochidis"
+    given-names: "Stefanos"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Kompatsiaris"
+    given-names: "Ioannis"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+keywords:
+  - fire radiative power
+  - wildfire forecasting
+  - MSG-SEVIRI
+  - ERA5
+  - transformer
+  - skill score
+  - persistence baseline
+preferred-citation:
+  type: article
+  title: "A Persistence-Residual Framework for Sub-Daily Fire Radiative Power Trajectory Forecasting over Mediterranean Wildfires"
+  authors:
+    - family-names: "Valsamis"
+      given-names: "Dimitrios"
+    - family-names: "Papaioannou"
+      given-names: "Vassilios"
+    - family-names: "Moumtzidou"
+      given-names: "Anastasia"
+    - family-names: "Gialampoukidis"
+      given-names: "Ilias"
+    - family-names: "Vrochidis"
+      given-names: "Stefanos"
+    - family-names: "Kompatsiaris"
+      given-names: "Ioannis"
+  journal: "IEEE Geoscience and Remote Sensing Letters"
+  year: 2026                            # <FILL: publication year>
+  doi: "10.0000/GRSL.2026.0000000"      # <FILL: paper DOI when assigned>
+references:
+  - type: data
+    title: "PRT-GRSL derived dataset (dataset_v3): MSG-SEVIRI FRP + ERA5 model-ready cube for Mediterranean wildfire FRP forecasting"
+    authors:
+      - family-names: "Valsamis"
+        given-names: "Dimitrios"
+    year: 2026
+    doi: "10.5281/zenodo.0000000"       # <FILL: Zenodo DATA DOI>
+    license: CC-BY-4.0
+    notes: >-
+      Derived from ERA5 (Copernicus C3S/ECMWF) and EUMETSAT LSA SAF FRP-PIXEL
+      (MSG/SEVIRI); both sources must be acknowledged. Fetch with
+      scripts/fetch_data.py.
+  - type: grant
+    title: "HORIZON EUROPE ECHO project"
+    number: "101225575"
+    institution:
+      name: "European Commission"

@@ -1,0 +1,6 @@
+config,ensemble_val_SS,cross_seed_mean,cross_seed_std,ensemble_val_SS_excl_caceres,delta_vs_PRT_Full,delta_vs_PRT_Base,n_seeds
+prt_full,0.281911,0.265289,0.015657,0.278927,0.000000,0.007878,10
+full_minus_ssat,0.255836,0.235381,0.015354,0.262550,-0.026075,-0.018198,10
+full_minus_windfeats,0.284681,0.264545,0.026408,0.296464,0.002770,0.010647,10
+full_minus_balanced,0.278715,0.254215,0.014780,0.297445,-0.003197,0.004681,10
+prt_base,0.274033,0.208648,0.025234,0.292458,-0.007878,0.000000,10
