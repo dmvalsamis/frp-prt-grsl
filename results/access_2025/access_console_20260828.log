@@ -1,0 +1,138 @@
+environment pin OK: sklearn=1.2.2, numpy=1.26.4, torch=2.6.0+cpu, h5py=3.8.0
+input hashes OK: dataset, manifest, freeze table
+block-A composition OK: 46 rows match frozen list
+[access_20260828T123059Z] events=46 windows=11926
+M2 ensemble inference (hash-verified members):
+  M2 member s0: hash OK, predicted
+  M2 member s1: hash OK, predicted
+  M2 member s2: hash OK, predicted
+  M2 member s3: hash OK, predicted
+  M2 member s4: hash OK, predicted
+  M2 member s5: hash OK, predicted
+  M2 member s6: hash OK, predicted
+  M2 member s7: hash OK, predicted
+  M2 member s8: hash OK, predicted
+  M2 member s9: hash OK, predicted
+B6 (gbdt_log_T1) deterministic retrain + predict ...
+M1 (Zenodo-deposit ensemble, DESCRIPTIVE) inference:
+  M1 member seed_000.pt: hash OK, predicted
+  M1 member seed_001.pt: hash OK, predicted
+  M1 member seed_002.pt: hash OK, predicted
+  M1 member seed_003.pt: hash OK, predicted
+  M1 member seed_004.pt: hash OK, predicted
+  M1 member seed_005.pt: hash OK, predicted
+  M1 member seed_006.pt: hash OK, predicted
+  M1 member seed_007.pt: hash OK, predicted
+  M1 member seed_008.pt: hash OK, predicted
+  M1 member seed_009.pt: hash OK, predicted
+{
+  "label": "access_20260828T123059Z",
+  "counts": {
+    "gate_passing": 46,
+    "evaluable": 45,
+    "primary_evaluable": 29,
+    "sensitivity_evaluable": 31,
+    "N_min": 5
+  },
+  "PRIMARY_sign_test_M2_vs_B6_primary_set": {
+    "wins": 19,
+    "losses": 10,
+    "n": 29,
+    "p_one_sided": 0.06802297383546829,
+    "reject_at_005": false,
+    "wilcoxon_p": 0.1846191231161356
+  },
+  "SECONDARY_sign_test_M2_vs_B6_sensitivity_set": {
+    "wins": 21,
+    "losses": 10,
+    "n": 31,
+    "p_one_sided": 0.035377772990614176,
+    "reject_at_005": true,
+    "wilcoxon_p": 0.07870983518660069
+  },
+  "SECONDARY_sign_test_M2_vs_B1_primary_set": {
+    "wins": 27,
+    "losses": 2,
+    "n": 29,
+    "p_one_sided": 8.121132850646973e-07,
+    "reject_at_005": true,
+    "wilcoxon_p": 1.1920928955078125e-06
+  },
+  "AGG1_headline": {
+    "M2_median_SS_t6": 0.3488619960816117,
+    "B6_median_SS_t6": 0.34159240098626553,
+    "M2_mean_SS_t6": 0.2873812665232521,
+    "M2_std_SS_t6": 0.16635657004470303
+  },
+  "M1_DESCRIPTIVE": {
+    "note": "Zenodo-deposit ensemble (RAT-9 re-scope); DESCRIPTIVE ONLY \u2014 no test involves M1",
+    "M1_median_SS_t6": 0.3344652669283784,
+    "M1_mean_SS_t6": 0.2757310089299059
+  },
+  "run_utc": "2026-08-28T12:32:45.153763+00:00"
+}
+AMEND-8 strata table:
+{
+  "horizon_profile": {
+    "t+1": {
+      "n_events": 45,
+      "wins": 2,
+      "losses": 43,
+      "median_dSS": -0.2505156061989666
+    },
+    "t+3": {
+      "n_events": 45,
+      "wins": 17,
+      "losses": 28,
+      "median_dSS": -0.009080502383865596
+    },
+    "t+6": {
+      "n_events": 45,
+      "wins": 28,
+      "losses": 17,
+      "median_dSS": 0.004367586866719675
+    },
+    "t+12": {
+      "n_events": 45,
+      "wins": 29,
+      "losses": 16,
+      "median_dSS": 0.006755643109590648
+    }
+  },
+  "wind_regime_t6": {
+    "calm": {
+      "n_events": 45,
+      "wins": 27,
+      "losses": 18,
+      "median_dSS": 0.004595327445219288,
+      "n_fire_windows": 5529
+    },
+    "exc": {
+      "n_events": 45,
+      "wins": 28,
+      "losses": 17,
+      "median_dSS": 0.005269194546393519,
+      "n_fire_windows": 1728
+    }
+  },
+  "volatility_tertiles_t6": {
+    "high": {
+      "n_events": 16,
+      "wins": 13,
+      "losses": 3,
+      "median_dSS": 0.016256082074966982
+    },
+    "low": {
+      "n_events": 6,
+      "wins": 4,
+      "losses": 2,
+      "median_dSS": 0.04042425588416565
+    },
+    "mid": {
+      "n_events": 23,
+      "wins": 11,
+      "losses": 12,
+      "median_dSS": -0.0020486354272697405
+    }
+  }
+}

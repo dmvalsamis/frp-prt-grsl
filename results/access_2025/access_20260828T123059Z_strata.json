@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "amendment": "AMEND-8 (memo A6, T-1..T-4)",
+    "note": "DESCRIPTIVE ONLY \u2014 paired win counts and median deltaSS (M2 - B6); no p-values, no CIs, no promotion to confirmatory status under any outcome (AMEND-7)",
+    "frozen_constants": {
+      "delta_wind_3h_sigma_train": 0.7994305491447449,
+      "vol_tertile_lo": 0.8348539322108006,
+      "vol_tertile_hi": 1.0851316749933935,
+      "horizons": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "volatility_descriptor": "population std of delta(log1p(frp_sum_mw)) over consecutive 1h fire->fire slot pairs"
+    }
+  },
+  "horizon_profile": {
+    "t+1": {
+      "n_events": 45,
+      "wins": 2,
+      "losses": 43,
+      "median_dSS": -0.2505156061989666
+    },
+    "t+3": {
+      "n_events": 45,
+      "wins": 17,
+      "losses": 28,
+      "median_dSS": -0.009080502383865596
+    },
+    "t+6": {
+      "n_events": 45,
+      "wins": 28,
+      "losses": 17,
+      "median_dSS": 0.004367586866719675
+    },
+    "t+12": {
+      "n_events": 45,
+      "wins": 29,
+      "losses": 16,
+      "median_dSS": 0.006755643109590648
+    }
+  },
+  "wind_regime_t6": {
+    "calm": {
+      "n_events": 45,
+      "wins": 27,
+      "losses": 18,
+      "median_dSS": 0.004595327445219288,
+      "n_fire_windows": 5529
+    },
+    "exc": {
+      "n_events": 45,
+      "wins": 28,
+      "losses": 17,
+      "median_dSS": 0.005269194546393519,
+      "n_fire_windows": 1728
+    }
+  },
+  "volatility_tertiles_t6": {
+    "high": {
+      "n_events": 16,
+      "wins": 13,
+      "losses": 3,
+      "median_dSS": 0.016256082074966982
+    },
+    "low": {
+      "n_events": 6,
+      "wins": 4,
+      "losses": 2,
+      "median_dSS": 0.04042425588416565
+    },
+    "mid": {
+      "n_events": 23,
+      "wins": 11,
+      "losses": 12,
+      "median_dSS": -0.0020486354272697405
+    }
+  }
+}

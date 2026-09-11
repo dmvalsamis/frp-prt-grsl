@@ -1,0 +1,20 @@
+# Python 3.11 (CPU only — no GPU is needed to train or evaluate the ensemble).
+#
+#   pip install -r requirements.txt
+#   # for the exact CPU wheel used at the access:
+#   # pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+#
+# These are the versions asserted at run time by scripts/test_access_v1.py, which refuses to
+# run against anything else (registration/access_environment_lock.txt). scikit-learn's version
+# is the one that matters most: the gradient-boosting comparator is retrained deterministically
+# at scoring time, and its implementation changes between releases.
+
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.2.2
+scipy==1.17.1
+torch==2.6.0
+h5py==3.8.0
+
+# figures only
+matplotlib==3.8.0

@@ -1,0 +1,77 @@
+[
+  {
+    "dropped": "gr_n38e25_2025_0622",
+    "kept": "tr_n_a_2025_0625",
+    "overlap_fraction": 1.0
+  },
+  {
+    "dropped": "pt_ervededo_2025_0819",
+    "kept": "es_oimbra_2025_0813",
+    "overlap_fraction": 1.0
+  },
+  {
+    "dropped": "es_oimbra_2025_0813",
+    "kept": "es_rua_a_2025_0808",
+    "overlap_fraction": 1.0
+  },
+  {
+    "dropped": "es_villablino_2025_0809",
+    "kept": "es_peranzanes_2025_0810",
+    "overlap_fraction": 0.914
+  },
+  {
+    "dropped": "es_una_de_quintana_2025_0810",
+    "kept": "es_rua_a_2025_0808",
+    "overlap_fraction": 0.8943
+  },
+  {
+    "dropped": "es_peranzanes_2025_0810",
+    "kept": "es_rua_a_2025_0808",
+    "overlap_fraction": 0.8056
+  },
+  {
+    "dropped": "es_murias_de_paredes_2025_0821",
+    "kept": "es_rua_a_2025_0808",
+    "overlap_fraction": 0.7849
+  },
+  {
+    "dropped": "pt_pena_quinta_e_vila_2025_0803",
+    "kept": "pt_real_2025_0728",
+    "overlap_fraction": 0.7818
+  },
+  {
+    "dropped": "es_avila_2025_0808",
+    "kept": "es_navaconcejo_2025_0812",
+    "overlap_fraction": 0.7273
+  },
+  {
+    "dropped": "pt_real_2025_0728",
+    "kept": "pt_trancoso_sao_pedro_2025_0808",
+    "overlap_fraction": 0.6667
+  },
+  {
+    "dropped": "es_carballeda_de_avia_2025_0815",
+    "kept": "es_rua_a_2025_0808",
+    "overlap_fraction": 0.3333
+  },
+  {
+    "dropped": "es_caceres_2025_0808",
+    "kept": "es_navaconcejo_2025_0812",
+    "overlap_fraction": 0.2286
+  },
+  {
+    "dropped": "pt_lousa_e_vilarinho_2025_0814",
+    "kept": "pt_trancoso_sao_pedro_2025_0808",
+    "overlap_fraction": 0.2283
+  },
+  {
+    "dropped": "ba_n_a_2025_0811",
+    "kept": "me_n_a_2025_0810",
+    "overlap_fraction": 0.1765
+  },
+  {
+    "dropped": "it_custonaci_2025_0720",
+    "kept": "it_niscemi_2025_0716",
+    "overlap_fraction": 0.127
+  }
+]

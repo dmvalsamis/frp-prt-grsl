@@ -1,0 +1,54 @@
+{
+  "label": "exploratory_blockB_20260908T140106Z",
+  "counts": {
+    "gate_passing": 32,
+    "evaluable": 32,
+    "primary_evaluable": 32,
+    "sensitivity_evaluable": 32,
+    "N_min": 5
+  },
+  "PRIMARY_sign_test_M2_vs_B6_primary_set": {
+    "wins": 15,
+    "losses": 17,
+    "n": 32,
+    "p_one_sided": 0.7016925520729274,
+    "reject_at_005": false,
+    "wilcoxon_p": 0.865047198953107
+  },
+  "SECONDARY_sign_test_M2_vs_B6_sensitivity_set": {
+    "wins": 15,
+    "losses": 17,
+    "n": 32,
+    "p_one_sided": 0.7016925520729274,
+    "reject_at_005": false,
+    "wilcoxon_p": 0.865047198953107
+  },
+  "SECONDARY_sign_test_M2_vs_B1_primary_set": {
+    "wins": 29,
+    "losses": 3,
+    "n": 32,
+    "p_one_sided": 1.2780074030160904e-06,
+    "reject_at_005": true,
+    "wilcoxon_p": 6.437767297029495e-07
+  },
+  "AGG1_headline": {
+    "M2_median_SS_t6": 0.30215775135817485,
+    "B6_median_SS_t6": 0.3179083237506138,
+    "M2_mean_SS_t6": 0.24446316764888398,
+    "M2_std_SS_t6": 0.2205902488798506
+  },
+  "M1_DESCRIPTIVE": {
+    "note": "Zenodo-deposit ensemble (RAT-9 re-scope); DESCRIPTIVE ONLY \u2014 no test involves M1",
+    "M1_median_SS_t6": 0.307304185054261,
+    "M1_mean_SS_t6": 0.2694673189939044
+  },
+  "run_utc": "2026-09-08T14:02:18.548132+00:00",
+  "b6_definition": {
+    "model": "HistGradientBoostingRegressor log1p target",
+    "cfg": {
+      "max_leaf_nodes": 63,
+      "learning_rate": 0.1
+    },
+    "train_pool": "dataset_v6_1 full train (T1)"
+  }
+}

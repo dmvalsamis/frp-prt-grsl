@@ -1,0 +1,29 @@
+# Secrets — never commit
+tkn.txt
+*.token
+.env
+credentials.json
+
+# Data fetched from Zenodo or regenerated locally (see docs/data_access.md).
+# The staging helper writes into these paths; they are not part of the repository.
+data/
+resubmission/
+*.h5
+*.nc
+*.grib
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / scratch
+.DS_Store
+Thumbs.db
+*.log
+# ...but the access console log is evidence, not scratch
+!results/access_2025/*.log
+/scratch/

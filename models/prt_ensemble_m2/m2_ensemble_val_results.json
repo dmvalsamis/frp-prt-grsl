@@ -1,0 +1,92 @@
+{
+  "winner_cell": "T1_robust",
+  "ensemble_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "combination_rule": "log-mean: expm1(mean(log1p(preds)))",
+  "val_median_ss_t6": 0.31314106405784614,
+  "val_mean_ss_t6": 0.32000747252893175,
+  "val_std_ss_t6": 0.1291438185421904,
+  "n_events_evaluable": 12,
+  "val_wins_vs_B6": [
+    10,
+    12
+  ],
+  "per_event": {
+    "alexandroupolis_2023": {
+      "n_fire": 133,
+      "MAE_fire_t6": 1067.257080078125,
+      "SS_fire_t6": 0.5098036247407439
+    },
+    "ba_n_a_2020_0409": {
+      "n_fire": 19,
+      "MAE_fire_t6": 14.505263328552246,
+      "SS_fire_t6": 0.3013941920148817
+    },
+    "bejaia_2023": {
+      "n_fire": 73,
+      "MAE_fire_t6": 114.97885131835938,
+      "SS_fire_t6": 0.31279478263296245
+    },
+    "bonarcado_2021": {
+      "n_fire": 74,
+      "MAE_fire_t6": 102.1627197265625,
+      "SS_fire_t6": 0.31118310889694833
+    },
+    "es_carballeda_de_avia_2017_1013": {
+      "n_fire": 25,
+      "MAE_fire_t6": 4863.39453125,
+      "SS_fire_t6": 0.44745355805546794
+    },
+    "hr_velebit_2017": {
+      "n_fire": 61,
+      "MAE_fire_t6": 789.084228515625,
+      "SS_fire_t6": 0.29455493032939584
+    },
+    "huelva_2020": {
+      "n_fire": 124,
+      "MAE_fire_t6": 3257.6494140625,
+      "SS_fire_t6": 0.3926268011924847
+    },
+    "kabylie_2021": {
+      "n_fire": 134,
+      "MAE_fire_t6": 2024.0592041015625,
+      "SS_fire_t6": 0.31348734548272983
+    },
+    "morocco_rif_2022": {
+      "n_fire": 44,
+      "MAE_fire_t6": 71.35966491699219,
+      "SS_fire_t6": 0.3813396249378248
+    },
+    "mugla_2021": {
+      "n_fire": 196,
+      "MAE_fire_t6": 3644.251953125,
+      "SS_fire_t6": 0.11710692661642796
+    },
+    "pt_algarve2_2016": {
+      "n_fire": 30,
+      "MAE_fire_t6": 3741.19580078125,
+      "SS_fire_t6": 0.05123735272109131
+    },
+    "sierra_2022": {
+      "n_fire": 91,
+      "MAE_fire_t6": 1425.4857177734375,
+      "SS_fire_t6": 0.40710742272622225
+    },
+    "tn_n_a_2017_0808": {
+      "n_fire": 0,
+      "MAE_fire_t6": NaN,
+      "SS_fire_t6": NaN
+    }
+  },
+  "created_utc": "2026-08-26T09:39:39.510581+00:00"
+}

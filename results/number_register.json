@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "created": "2026-09-03",
+    "purpose": "Canonical numbers for the GRSL letter v2. Every figure in the manuscript must appear here at this precision. Sources are the locked access outputs and the program reports in GRSL_resubmission_handoff_2026-08-28.zip.",
+    "rule": "Never round, never re-derive. If a number is needed that is not here, it must be computed from per_event.csv / results.json and added with its source before it enters the text."
+  },
+  "counts": {
+    "gate_passing_blockA": 46,
+    "evaluable_blockA": 45,
+    "primary_n": 29,
+    "primary_declared_n": 30,
+    "sensitivity_n": 31,
+    "sensitivity_declared_n": 32,
+    "windows_blockA": 11926,
+    "fire_windows_blockA": 7257,
+    "fire_windows_calm": 5529,
+    "fire_windows_excursion": 1728,
+    "dec3_dropped_descriptive": 14,
+    "d7_restored": 3,
+    "N_min": 5,
+    "dev_pool_events": 84,
+    "train_events": 71,
+    "val_events": 13,
+    "val_evaluable": 12,
+    "blockB_gate_passing": 32,
+    "dataset_v61_windows": 16079,
+    "dataset_v61_train_windows": 13985,
+    "dataset_v61_val_windows": 2094,
+    "features": 32,
+    "lookback_h": 48,
+    "horizon_h": 12,
+    "countries_blockA": 12,
+    "zero_fire_event": "gr_n38e20_2025_0812",
+    "zero_fire_event_windows": 181
+  },
+  "primary": {
+    "wins": 19, "losses": 10, "n": 29,
+    "p_one_sided": "0.0680", "wilcoxon_p": "0.185", "reject_at_005": false
+  },
+  "secondary_sensitivity": {
+    "wins": 21, "losses": 10, "n": 31,
+    "p_one_sided": "0.0354", "wilcoxon_p": "0.0787", "promotable": false
+  },
+  "secondary_vs_persistence": {
+    "wins": 27, "losses": 2, "n": 29,
+    "p_one_sided": "8.1\\times10^{-7}", "wilcoxon_p": "1.2\\times10^{-6}"
+  },
+  "agg1_blockA_45": {
+    "M2_median": "+0.3489", "M2_mean": "+0.2874", "M2_std": "0.1664",
+    "B6_median": "+0.3416", "B6_mean": "+0.2671",
+    "M1_median": "+0.3345", "M1_mean": "+0.2757",
+    "M2_negative_events": 4, "B6_negative_events": 5,
+    "M2_min": "-0.174"
+  },
+  "horizon_medians_blockA": {
+    "M2": {"t1": "-0.0009", "t3": "+0.1891", "t6": "+0.3489", "t12": "+0.3910"},
+    "B6": {"t1": "+0.2715", "t3": "+0.2433", "t6": "+0.3416", "t12": "+0.3945"}
+  },
+  "strata_amend8": {
+    "horizon": {
+      "t1": {"wins": 2, "losses": 43, "median_dSS": "-0.251"},
+      "t3": {"wins": 17, "losses": 28, "median_dSS": "-0.009"},
+      "t6": {"wins": 28, "losses": 17, "median_dSS": "+0.004"},
+      "t12": {"wins": 29, "losses": 16, "median_dSS": "+0.007"}
+    },
+    "wind_t6": {
+      "calm": {"wins": 27, "losses": 18, "median_dSS": "+0.005"},
+      "excursion": {"wins": 28, "losses": 17, "median_dSS": "+0.005"}
+    },
+    "volatility_t6": {
+      "high": {"n": 16, "wins": 13, "losses": 3, "median_dSS": "+0.016"},
+      "mid": {"n": 23, "wins": 11, "losses": 12, "median_dSS": "-0.002"},
+      "low": {"n": 6, "wins": 4, "losses": 2, "median_dSS": "+0.040"}
+    },
+    "frozen_constants": {
+      "delta_wind_3h_sigma_train": "0.7994",
+      "vol_tertile_lo": "0.8349",
+      "vol_tertile_hi": "1.0851"
+    }
+  },
+  "validation": {
+    "persistence_diurnal": "+0.009",
+    "persistence_times_shape": "-0.022",
+    "ar_ridge_raw_T0": "+0.1703", "ar_ridge_raw_T1": "+0.024",
+    "ar_ridge_log_T0": "+0.2761", "ar_ridge_log_T1": "+0.2767",
+    "gbdt_raw_T0": "-0.010", "gbdt_raw_T1": "+0.024",
+    "gbdt_log_T0": "+0.2945", "gbdt_log_T1_B6": "+0.3050",
+    "B6_mean": "+0.2913", "B6_std": "0.1273",
+    "grid_T0_legacy": "+0.2940", "grid_T0_robust": "+0.3041",
+    "grid_T1_legacy": "+0.2989", "grid_T1_robust": "+0.3348",
+    "grid_winfrac": {"T0_legacy": "0.750", "T0_robust": "0.750", "T1_legacy": "0.889", "T1_robust": "0.944"},
+    "grid_worst": {"T0_legacy": "+0.033", "T0_robust": "-0.164", "T1_legacy": "-0.973", "T1_robust": "+0.021"},
+    "M2_median": "+0.3131", "M2_mean": "+0.3200", "M2_std": "0.1291",
+    "M2_min": "+0.051", "M2_wins_vs_B6": "9", "M2_wins_vs_B6_n": "12"
+  },
+  "model": {
+    "hidden": 96, "heads": 4, "dropout": "0.1", "lstm_layers": 2,
+    "residual_clamp_max": "0.5", "ensemble_seeds": 10,
+    "freeze_utc": "2026-08-26T09:39:40Z",
+    "B6": {"leaves": 63, "lr": "0.1", "max_iter": 300, "early_stopping": "10%", "random_state": 0}
+  },
+  "registration": {
+    "prereg_sha256": "9fc24cc719df69643d5a73f0881349be9646e04ff5c4339f6573ae8d88de7c5e",
+    "script_sha256": "6b403afc53b41a4f0c5bf75b45954ae39cdd35b06ee9d2ca6feef56ee897b1c4",
+    "bundle_sha256": "06beb77fb131d2cdcccafb0bb5ce6800532ba5e7be9c88ffd16349607cb6f71c",
+    "event_list_sha256": "b339f1795aaf977ebef0a2e8110d5e4df3c98e0cea0f902f6ec22a4f658b05e3",
+    "gate_sha256_short": "e02db840...5115",
+    "tag": "prereg-lock-v1", "commit": "9a65d8e",
+    "repo": "github.com/dmvalsamis/FRP_GSRL",
+    "tag_utc": "2026-08-28T12:30:09Z",
+    "access_start_utc": "2026-08-28T12:30:59Z",
+    "run_utc": "2026-08-28T12:32:45Z",
+    "outputs_commit": "4ffe029",
+    "zenodo_doi_lockbundle": "PENDING",
+    "zenodo_doi_M1": "10.5281/zenodo.20627737",
+    "environment": "sklearn 1.2.2, numpy 1.26.4, torch 2.6.0+cpu, h5py 3.8.0"
+  },
+  "figure_sources": {
+    "_note": "Added 2026-09-08 (execution track, T3/Fig. 1). Per-event peak hourly FRP exists as column peak_frp_mw in the sources below (no recomputation from hourly files was needed). Values are metadata only; block B (2026) untouched.",
+    "fig1_dev_pool": {
+      "source": "resubmission/frozen_dev_pool_2026-08-25.csv",
+      "sha256": "1ff9eea16a46efeb93cfacbb91e83b949669a9b29d9a2c871e2c1daeb412714c",
+      "n": 84,
+      "ignition_years": "2007-2024",
+      "peak_frp_mw_min": "873.7",
+      "peak_frp_mw_median": "14693.0",
+      "peak_frp_mw_max": "150228.9"
+    },
+    "fig1_blockA": {
+      "source": "data/processed/event_catalogue.csv (rows named in resubmission/test_event_list_blockA_LOCKED.csv)",
+      "sha256_catalogue": "0960d2403f6e2b29c87e45f33ceef71a124f64d6209a735ecf1874b960ad61ee",
+      "sha256_event_list": "b339f1795aaf977ebef0a2e8110d5e4df3c98e0cea0f902f6ec22a4f658b05e3",
+      "n": 46,
+      "ignition_year": 2025,
+      "countries": 12,
+      "peak_frp_mw_min": "1877.2",
+      "peak_frp_mw_median": "14888.2",
+      "peak_frp_mw_max": "145235.2"
+    },
+    "fig3": {
+      "source": "resubmission/TEST_ACCESS_RESULTS/access_20260828T123059Z_per_event.csv + _strata.json",
+      "points": {
+        "primary": 29,
+        "sensitivity_only": 2,
+        "descriptive_only": 14
+      },
+      "horizon_wins_M2_B6": {
+        "t1": "2/43",
+        "t3": "17/28",
+        "t6": "28/17",
+        "t12": "29/16"
+      }
+    }
+  },
+  "dead_anchors": [
+    "+0.2998", "+0.2402", "+0.1969", "0.334", "+0.517", "+0.288", "+0.103",
+    "+0.276", "0.181", "+0.138", "+0.431", "0.2074", "0.4285", "0.1535",
+    "0.3451", "0.1115", "0.2905", "+0.0595", "+0.1029", "+0.2335", "0.242",
+    "0.220", "6,631", "3,500", "1,946", "17,393", "6,684", "3,977",
+    "34 wildfire", "25 training", "four held-out", "held-out test",
+    "accessed three times", "post-audit", "TFT", "PRT-Full", "PRT-Base",
+    "PRT-Tuned", "SSAT", "WindFeats", "GRU-Skip", "MLP-Mixer", "CNN-Skip",
+    "LSTM-Skip", "0.776", "265,165", "0.245"
+  ],
+  "forbidden_phrases": [
+    "novel", "novelty", "state-of-the-art", "outperform", "future work",
+    "rigorous", "comprehensive", "first event-level", "for the first time",
+    "we are the first", "operationally ready", "production-ready",
+    "ready for deployment", "independent sign-off", "supervisor-approved",
+    "significantly better", "significantly outperforms", "excels"
+  ]
+}

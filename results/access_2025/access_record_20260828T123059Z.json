@@ -1,0 +1,6 @@
+{
+  "event_list": "resubmission\\test_event_list_blockA_LOCKED.csv",
+  "event_list_sha256": "b339f1795aaf977ebef0a2e8110d5e4df3c98e0cea0f902f6ec22a4f658b05e3",
+  "script_declared": "test_access_v1.py",
+  "utc": "20260828T123059Z"
+}

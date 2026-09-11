@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "n_events": 45,
+  "max_abs_diff": 5.684341886080802e-14,
+  "tolerance": 0.001,
+  "locked_table": "resubmission\\TEST_ACCESS_RESULTS\\access_20260828T123059Z_per_event.csv",
+  "utc": "2026-09-09T10:54:25.004647+00:00"
+}

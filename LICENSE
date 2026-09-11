@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 Dimitrios Valsamis, Vassilios Papaioannou, Anastasia
+Moumtzidou, Ilias Gialampoukidis, Stefanos Vrochidis, and Ioannis Kompatsiaris
+(Information Technologies Institute, Centre for Research and Technology Hellas,
+CERTH)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------------
+NOTE ON DATA AND MODEL WEIGHTS
+----------------------------------------------------------------------------
+This MIT license covers the SOURCE CODE in this repository only.
+
+It does NOT relicense the underlying Earth-observation data products, which
+are governed by their own providers' terms:
+  - MSG-SEVIRI FRP-PIXEL is an EUMETSAT LSA SAF product (LSA SAF licensing).
+  - ERA5 is a Copernicus Climate Change Service (C3S) product (Copernicus
+    licence). ECMWF/Copernicus must be acknowledged for any use of ERA5.
+The raw and assembled data cubes derived from these products are NOT
+redistributed here; see data/README.md for acquisition instructions.
+
+The trained model checkpoints in models/ are released under this same MIT
+license as derived parameters; users remain responsible for complying with
+the source-data providers' terms when re-deriving inputs.

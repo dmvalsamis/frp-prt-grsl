@@ -1,0 +1,10 @@
+# Access-time environment pin (A-d, 2026-08-28). The access script asserts
+# the critical four (sklearn, numpy, torch, h5py) at runtime; the rest are
+# recorded for reproduction. Interpreter: Anaconda python.exe per CLAUDE.md.
+python=3.11.5
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.2.2
+scipy==1.17.1
+torch==2.6.0+cpu
+h5py==3.8.0

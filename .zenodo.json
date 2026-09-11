@@ -1,0 +1,31 @@
+{
+  "title": "Sub-daily FRP forecasting over Mediterranean wildfires: reproduction package (2026 resubmission)",
+  "description": "<p>Code, pre-registration, model checkpoints and per-event results for a study of sub-daily Fire Radiative Power (FRP) forecasting over Mediterranean wildfires, driven by EUMETSAT LSA SAF FRP-PIXEL retrievals from MSG/SEVIRI and ERA5 covariates.</p><p>A persistence-residual neural forecaster is compared against log-space gradient boosting under a registration committed before the single evaluation of a sequestered test block of 46 fires of the 2025 season, followed by a labelled exploratory replication on 32 fires of 2026 and on six alternative encoders. The pre-registered primary test does not reject: the deep model attains lower per-event error on 19 of 29 events, one short of its pre-declared rejection region.</p><p>This release contains the pre-registration and its lock bundle, the frozen scoring script, the ten ensemble checkpoints loaded at the single access, every per-event result table for both blocks and the encoder comparison, the 162-event catalogue with its quality-gate and independence audits, and the figures of the letter with the scripts that draw them. The derived data cube and the per-event hourly tables are deposited separately under concept DOI 10.5281/zenodo.20627568.</p><p>Version 1.0.0 of this repository, an earlier version of the study whose four-event evaluation was not independent, is preserved unchanged; the present pre-registration verifies one archived model against it by checksum.</p>",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "creators": [
+    {"name": "Valsamis, Dimitrios", "affiliation": "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thessaloniki, Greece", "orcid": "0009-0002-6699-4426"},
+    {"name": "Papaioannou, Vassilios", "affiliation": "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thessaloniki, Greece"},
+    {"name": "Moumtzidou, Anastasia", "affiliation": "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thessaloniki, Greece"},
+    {"name": "Gialampoukidis, Ilias", "affiliation": "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thessaloniki, Greece"},
+    {"name": "Vrochidis, Stefanos", "affiliation": "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thessaloniki, Greece"},
+    {"name": "Kompatsiaris, Ioannis", "affiliation": "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thessaloniki, Greece"}
+  ],
+  "keywords": [
+    "fire radiative power",
+    "wildfire forecasting",
+    "MSG-SEVIRI",
+    "ERA5",
+    "pre-registration",
+    "gradient boosting",
+    "persistence baseline",
+    "skill score",
+    "remote sensing"
+  ],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.20627568", "relation": "isSupplementedBy", "resource_type": "dataset", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.20627737", "relation": "isNewVersionOf", "resource_type": "software", "scheme": "doi"}
+  ],
+  "grants": [{"id": "10.13039/501100000780::101225575"}]
+}

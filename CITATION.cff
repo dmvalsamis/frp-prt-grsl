@@ -1,0 +1,95 @@
+cff-version: 1.2.0
+message: "If you use this code, the model checkpoints or the reproduction materials, please cite the paper below."
+title: "Sub-daily FRP forecasting over Mediterranean wildfires — reproduction package (2026 resubmission)"
+abstract: >-
+  Code, pre-registration, model checkpoints and per-event results for a study of
+  sub-daily Fire Radiative Power forecasting over Mediterranean wildfires, driven
+  by MSG-SEVIRI FRP and ERA5 covariates. A persistence-residual neural forecaster
+  is compared against log-space gradient boosting under a registration committed
+  before the single evaluation of a sequestered 46-fire test block, followed by a
+  labelled exploratory replication on 32 fires of the next season and on six
+  alternative encoders. The pre-registered primary test does not reject.
+type: software
+license: MIT
+version: "2.0.0"
+date-released: "2026-09-11"
+repository-code: "https://github.com/dmvalsamis/frp-prt-grsl"
+authors:
+  - family-names: "Valsamis"
+    given-names: "Dimitrios"
+    orcid: "https://orcid.org/0009-0002-6699-4426"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+    email: "dvalsamis@iti.gr"
+  - family-names: "Papaioannou"
+    given-names: "Vassilios"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Moumtzidou"
+    given-names: "Anastasia"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Gialampoukidis"
+    given-names: "Ilias"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Vrochidis"
+    given-names: "Stefanos"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+  - family-names: "Kompatsiaris"
+    given-names: "Ioannis"
+    affiliation: "Information Technologies Institute, Centre for Research and Technology Hellas (CERTH), Thermi, Thessaloniki, Greece"
+keywords:
+  - fire radiative power
+  - wildfire forecasting
+  - MSG-SEVIRI
+  - ERA5
+  - pre-registration
+  - gradient boosting
+  - persistence baseline
+  - skill score
+preferred-citation:
+  type: article
+  title: "Sub-Daily Fire Radiative Power Forecasting over Mediterranean Wildfires: Pre-Registered Evaluation and Two-Season Replication of Persistence-Residual and Gradient-Boosting Models"
+  authors:
+    - family-names: "Valsamis"
+      given-names: "Dimitrios"
+    - family-names: "Papaioannou"
+      given-names: "Vassilios"
+    - family-names: "Moumtzidou"
+      given-names: "Anastasia"
+    - family-names: "Gialampoukidis"
+      given-names: "Ilias"
+    - family-names: "Vrochidis"
+      given-names: "Stefanos"
+    - family-names: "Kompatsiaris"
+      given-names: "Ioannis"
+  journal: "IEEE Geoscience and Remote Sensing Letters"
+  year: 2026
+  notes: "Under review. DOI to be added on acceptance."
+references:
+  - type: data
+    title: "PRT-GRSL derived dataset: MSG-SEVIRI FRP + ERA5 model-ready cube for Mediterranean wildfire FRP forecasting"
+    authors:
+      - family-names: "Valsamis"
+        given-names: "Dimitrios"
+    year: 2026
+    doi: "10.5281/zenodo.20627568"
+    license: CC-BY-4.0
+    notes: >-
+      Concept DOI; always resolves to the latest version. Derived from EUMETSAT
+      LSA SAF FRP-PIXEL (MSG/SEVIRI) and ERA5/ERA5T (Copernicus C3S/ECMWF); both
+      sources must be acknowledged.
+  - type: software
+    title: "PRT: A Persistence-Residual Transformer for sub-daily Fire Radiative Power trajectory forecasting (v1.0.0)"
+    authors:
+      - family-names: "Valsamis"
+        given-names: "Dimitrios"
+    year: 2026
+    doi: "10.5281/zenodo.20627737"
+    notes: >-
+      The earlier version of this study, preserved on the main branch and under
+      tag v1.0.0 of this repository. Its archived ensemble is scored descriptively
+      inside the single access of the present study, and the pre-registration
+      verifies it against that deposit by checksum.
+  - type: grant
+    title: "HORIZON EUROPE ECHO project"
+    number: "101225575"
+    institution:
+      name: "European Commission"
