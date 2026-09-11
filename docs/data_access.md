@@ -66,8 +66,8 @@ download and aggregation pipeline that regenerates the derived tables from them:
   `06_era5_download.py` handles the request, the ERA5/ERA5T stream merge and the quality
   checks.
 
-The raw FRP-PIXEL archive for 162 events runs to tens of gigabytes, which is the other reason
-the derived hourly tables are the practical starting point.
+The raw FRP-PIXEL archive for these 162 events is about 51 GB of 15-minute HDF5 products, which
+is the other reason the derived hourly tables are the practical starting point.
 
 ## Licence
 

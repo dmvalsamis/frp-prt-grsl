@@ -52,9 +52,9 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `catalogue/split_v6_2026-08-25.csv` | 8307 | `5cbbccc44d62bb1d92ec15fd590157da9d4c03762b3ee2eb5e51f15cd854e911` |
 | `CITATION.cff` | 4507 | `4dbaf047c44998ac0275cd98aca838bc2e592e5c48a2c4f4c3261c07d054f2dd` |
 | `docs/claims_to_evidence.md` | 7889 | `74d1cb7575661a81e75e47b4d0e322e938da21db2496c28cb4cc8adfc8da1a41` |
-| `docs/data_access.md` | 4748 | `c327571b21465bc8b53d79e7d3106ed469c9f914c579e2b4d7fea1649de44c17` |
-| `docs/integrity_hashes.md` | 15767 | `4bf5aa422ce2cb2f28e8a2056c80b7890d1069fd807956c242c8b9a5901a4c6b` |
-| `docs/reproducibility.md` | 5342 | `b87ac657b0caebb89b92dbcd4db2f72705d92efb381dfcf61a126359ca2d7703` |
+| `docs/data_access.md` | 4770 | `e1754b200690b493886ecfdabe0883d39971c9c327bf5fa246f74b50a684049c` |
+| `docs/integrity_hashes.md` | 15943 | `99fb79f4ad5397fe1b7d53f4e55a526f5e552c1749e9ecd9366879408692f565` |
+| `docs/reproducibility.md` | 5342 | `52f2162838d8280ec3cb5d1ad7133841f413a55588c95d34dd28444d78c0add0` |
 | `figures/fig1_catalogue.pdf` | 43403 | `d8870fc8035eb61a7364fbbd57830daf1ad2c685623ec8b8ace72df8e077813f` |
 | `figures/fig2_framework.pdf` | 42949 | `ce9296e3077661968336a0cf6877ebc7e567c206d33a1464beb55dd4da4dda9b` |
 | `figures/fig3_paired.pdf` | 66280 | `68abcfbc1cf7407e4d840bb60f9a74af4adf1b77d8aeb77eb3d0ac046a5b67a5` |

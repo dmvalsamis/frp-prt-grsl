@@ -89,7 +89,7 @@ stated in the letter.
 those files are replaced by placeholders; register for your own EUMETSAT account and substitute
 them. See [`data_access.md`](data_access.md) for what the raw products are and where they come
 from. Rebuilding the cube from scratch is the only path that does not rely on our derived
-tables, and it is the slowest: the raw FRP-PIXEL archive for 162 events is tens of gigabytes.
+tables, and it is the slowest: the raw FRP-PIXEL archive for these 162 events is about 51 GB.
 
 ## Environment
 
