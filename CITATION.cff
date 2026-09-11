@@ -70,10 +70,12 @@ references:
       - family-names: "Valsamis"
         given-names: "Dimitrios"
     year: 2026
-    doi: "10.5281/zenodo.20627568"
+    doi: "10.5281/zenodo.22705927"
+    version: "v3"
     license: CC-BY-4.0
     notes: >-
-      Concept DOI; always resolves to the latest version. Derived from EUMETSAT
+      Version DOI of the deposit used by this study; the concept DOI
+      10.5281/zenodo.20627568 always resolves to the latest version. Derived from EUMETSAT
       LSA SAF FRP-PIXEL (MSG/SEVIRI) and ERA5/ERA5T (Copernicus C3S/ECMWF); both
       sources must be acknowledged.
   - type: software

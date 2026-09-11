@@ -24,7 +24,7 @@
     "remote sensing"
   ],
   "related_identifiers": [
-    {"identifier": "10.5281/zenodo.20627568", "relation": "isSupplementedBy", "resource_type": "dataset", "scheme": "doi"},
+    {"identifier": "10.5281/zenodo.22705927", "relation": "isSupplementedBy", "resource_type": "dataset", "scheme": "doi"},
     {"identifier": "10.5281/zenodo.20627737", "relation": "isNewVersionOf", "resource_type": "software", "scheme": "doi"}
   ],
   "grants": [{"id": "10.13039/501100000780::101225575"}]

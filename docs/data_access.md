@@ -6,8 +6,9 @@ This repository holds code, the pre-registration, the model checkpoints and ever
 result table. It does **not** hold the model-ready cube or the per-event hourly tables, which
 are deposited on Zenodo:
 
-**Concept DOI: [10.5281/zenodo.20627568](https://doi.org/10.5281/zenodo.20627568)** — always
-resolves to the latest version. The version for this study contains:
+**Version DOI: [10.5281/zenodo.22705927](https://doi.org/10.5281/zenodo.22705927)** — v3, the exact deposit this study used, and the
+one to cite for reproduction. The concept DOI [10.5281/zenodo.20627568](https://doi.org/10.5281/zenodo.20627568)
+always resolves to the latest version. v3 contains:
 
 ```
 cube/dataset_v6_1.h5                     model-ready cube: 48 h lookback, 12 h horizon,
@@ -24,7 +25,8 @@ from the hourly tables by `scripts/test_access_v1.py`, which is how the sequestr
 during the study.
 
 The earlier version of this study deposited a 34-event cube (`dataset_v3.h5`) under the same
-concept DOI. That version is superseded for the present letter but remains retrievable.
+concept DOI, as v2 ([10.5281/zenodo.20627926](https://doi.org/10.5281/zenodo.20627926)). It is
+superseded for the present letter but remains retrievable and citable.
 
 ## Provenance of the underlying products
 

@@ -46,7 +46,7 @@ def place(src: Path, dst: Path, quiet=False):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--zenodo-zip", help="frp-prt-data-deposit-v3.zip from "
-                                         "https://doi.org/10.5281/zenodo.20627568")
+                                         "https://doi.org/10.5281/zenodo.22705927")
     ap.add_argument("--m1-archive", help="optional: the v1.0.0 source archive of this repository, "
                                          "needed only because the access script also scores the "
                                          "archived earlier ensemble (descriptive; no test uses it)")

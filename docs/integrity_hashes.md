@@ -5,6 +5,9 @@ annotated tag `prereg-lock-v1` and in the research log are reproduced in
 `registration/REGISTRATION_RECORD.md`, which also explains why the pre-registration document
 has two legitimate hashes (line endings).
 
+The Zenodo data deposit v3 (10.5281/zenodo.22705927) has md5 `aa3228d3ae40f759fc0f741550e9596c`,
+sha256 `d377e8f827843d4240e5a0926e5d7428e30ac6ab00a25563406d138e00754fcf`.
+
 | file | sha256 | what it is |
 |---|---|---|
 | `registration/lock_bundle_prereg_v1.zip` | `06beb77fb131d2cdcccafb0bb5ce6800532ba5e7be9c88ffd16349607cb6f71c` | the lock bundle: the canonical identifier of the registration |
@@ -30,7 +33,7 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | file | bytes | sha256 |
 |---|---|---|
 | `.gitignore` | 506 | `ea754e398cf2f1281a2053bbec9c2e08cf9bcc2ed82de62d167f481e4808de11` |
-| `.zenodo.json` | 3256 | `80c8698cd1d54c615559eee77b02ce6ca40836c768a01569ae6cd27805248df7` |
+| `.zenodo.json` | 3256 | `3001c0b7cfda5c8ebcdd5e29f90a5afe8cc0dc81f88f45deb982da487a4e5adc` |
 | `catalogue/dataset_v6_1_manifest.csv` | 1836457 | `cdff3201039e1846530568839c71254241a0c19881bf33b0bfff1bd1c367e1df` |
 | `catalogue/dev_curation_list_2026-08-25.csv` | 54641 | `3e0bc88c11dd626c85c1f1b164585bded25bea192a95303c3f92d0d4b2be6878` |
 | `catalogue/dev_curation_selected_2026-08-25.csv` | 11820 | `68e3aea2b31a9e05192325c505eb5fb78f309dbf5b9c87b927030e47cd7a129f` |
@@ -47,11 +50,11 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `catalogue/pixel_disjointness_test_A_2025_2026-08-25.csv` | 3481 | `ce2e9c1baf0e2aa465a112711adbd5568ee9038be6bbb52ba4363a15f109f64c` |
 | `catalogue/pixel_disjointness_test_A_2025_2026-08-25_drops.json` | 1851 | `df645cbe9d517966a165a5c1859cf160b6e71eb67074b59bca5fdb987a2c4a25` |
 | `catalogue/split_v6_2026-08-25.csv` | 8307 | `5cbbccc44d62bb1d92ec15fd590157da9d4c03762b3ee2eb5e51f15cd854e911` |
-| `CITATION.cff` | 4407 | `6257947d430bbc38ca25ff27532a350fb6d441bcab79c6a3acb5353cc0439fd1` |
+| `CITATION.cff` | 4507 | `4dbaf047c44998ac0275cd98aca838bc2e592e5c48a2c4f4c3261c07d054f2dd` |
 | `docs/claims_to_evidence.md` | 7889 | `74d1cb7575661a81e75e47b4d0e322e938da21db2496c28cb4cc8adfc8da1a41` |
-| `docs/data_access.md` | 4453 | `711595a0b3ea00f848eb771146fa636623d3b989d8c471cab70b9722531ac9ff` |
-| `docs/integrity_hashes.md` | 15767 | `470d141e4aadf3852804c97b60342b3c8860a2d217f4dcf90804a9f2381ce134` |
-| `docs/reproducibility.md` | 5241 | `ced33d28fef9b2fa1d86c5307cad804089fbbd557799f37fe70542ec1799bee1` |
+| `docs/data_access.md` | 4748 | `c327571b21465bc8b53d79e7d3106ed469c9f914c579e2b4d7fea1649de44c17` |
+| `docs/integrity_hashes.md` | 15767 | `4bf5aa422ce2cb2f28e8a2056c80b7890d1069fd807956c242c8b9a5901a4c6b` |
+| `docs/reproducibility.md` | 5342 | `b87ac657b0caebb89b92dbcd4db2f72705d92efb381dfcf61a126359ca2d7703` |
 | `figures/fig1_catalogue.pdf` | 43403 | `d8870fc8035eb61a7364fbbd57830daf1ad2c685623ec8b8ace72df8e077813f` |
 | `figures/fig2_framework.pdf` | 42949 | `ce9296e3077661968336a0cf6877ebc7e567c206d33a1464beb55dd4da4dda9b` |
 | `figures/fig3_paired.pdf` | 66280 | `68abcfbc1cf7407e4d840bb60f9a74af4adf1b77d8aeb77eb3d0ac046a5b67a5` |
@@ -83,7 +86,7 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `models/prt_ensemble_m2/seed_8_training_record.json` | 4419 | `23f159def2af60f99de0b5f534cd4df7736ad544a2e2081d308e4d57ab952c07` |
 | `models/prt_ensemble_m2/seed_9.pt` | 1068909 | `9cb79735814a097829bd8ba5cbe844c7e64435a470342aa1e58263c1a6536235` |
 | `models/prt_ensemble_m2/seed_9_training_record.json` | 4097 | `02cdafc3606f94cfd81361b26037dbd83ba0cd208e4ae76607f2417006509214` |
-| `README.md` | 8305 | `7ec394ca0c4d69e4cd804445e6205e2b374c52438203df8d032b36d0bebb8458` |
+| `README.md` | 8381 | `6b96760f1acae342729e8da1565530880369ca026b2e30685a4e607bdd21de76` |
 | `registration/access_environment_lock.txt` | 342 | `3c602982003cc19e55f1d7d8937e304068ad25b7c7627fe7dba7d1ac5ba501e5` |
 | `registration/blockA_input_manifest.csv` | 11418 | `7163744d71085a1bdb3178b162d135265dfc316b367c1894d88f7e616e0122f0` |
 | `registration/DEC4_RATIFICATION_ANNEX_2026-08-28.md` | 3544 | `6db0e56b6563dc2596b347efcc479769b1b5fe9bf07a73f2ed84c13c777d54f7` |
@@ -133,7 +136,7 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `scripts/explore_decisive_day.py` | 6854 | `0b5a32027195d44105c0d6e34cad6702bde9c25520da2f5bf5cf0a03c600a39d` |
 | `scripts/export_event_catalogue_162.py` | 9741 | `6d43ef4fc0a79ca14380773275a877a8b10f47dccf0b74f23dfe4b6aa1f81deb` |
 | `scripts/frp_quality_gate.py` | 6396 | `e02db840cf77031d4ba32a33ed712cd126fc15d1d4d75fcaa94222135d725115` |
-| `scripts/stage_repro_tree.py` | 5538 | `40698273f377839011f118b18daa2bbd6dfa1226153a66e8ba5c0e30bdd65ec2` |
+| `scripts/stage_repro_tree.py` | 5672 | `fd3cccd647b39e61576ff4ae8dfb71a37c4f196eaa0a04c0c8f8393809907c4b` |
 | `scripts/test_access_v1.py` | 35506 | `6b403afc53b41a4f0c5bf75b45954ae39cdd35b06ee9d2ca6feef56ee897b1c4` |
 | `scripts/verify_register.py` | 13222 | `3573413c176f953e7be22b3a099376a18f2f9f59427d8439cd27168178e60dc8` |
 

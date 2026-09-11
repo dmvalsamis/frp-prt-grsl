@@ -11,8 +11,9 @@ untouched on the `main` branch and under tag `v1.0.0`, because the pre-registrat
 study verifies one archived model against it. Nothing here overwrites it.
 
 Derived data (the model-ready cube and the per-event hourly tables) is deposited separately:
-**Zenodo concept DOI [10.5281/zenodo.20627568](https://doi.org/10.5281/zenodo.20627568)**,
-which always resolves to the latest version. See [`docs/data_access.md`](docs/data_access.md).
+**[10.5281/zenodo.22705927](https://doi.org/10.5281/zenodo.22705927)** (v3, 162 events). The concept DOI
+[10.5281/zenodo.20627568](https://doi.org/10.5281/zenodo.20627568) always resolves to the latest version.
+See [`docs/data_access.md`](docs/data_access.md).
 
 ---
 

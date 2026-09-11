@@ -37,7 +37,7 @@ hashes are part of the registration.
 Needs the model-ready cube from Zenodo (about 17 MB).
 
 ```bash
-# 1. fetch the data deposit: https://doi.org/10.5281/zenodo.20627568  (latest version)
+# 1. fetch the data deposit: https://doi.org/10.5281/zenodo.22705927   (v3, 162 events)
 # 2. build the directory layout the frozen scripts expect
 python scripts/stage_repro_tree.py --zenodo-zip frp-prt-data-deposit-v3.zip
 # 3. score
