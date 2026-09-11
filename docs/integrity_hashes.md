@@ -30,7 +30,7 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | file | bytes | sha256 |
 |---|---|---|
 | `.gitignore` | 506 | `ea754e398cf2f1281a2053bbec9c2e08cf9bcc2ed82de62d167f481e4808de11` |
-| `.zenodo.json` | 3245 | `8a230d4bbaad20df49d7ae7491cc1a6e59361d702b751e086b6b8df768afb0cf` |
+| `.zenodo.json` | 3256 | `80c8698cd1d54c615559eee77b02ce6ca40836c768a01569ae6cd27805248df7` |
 | `catalogue/dataset_v6_1_manifest.csv` | 1836457 | `cdff3201039e1846530568839c71254241a0c19881bf33b0bfff1bd1c367e1df` |
 | `catalogue/dev_curation_list_2026-08-25.csv` | 54641 | `3e0bc88c11dd626c85c1f1b164585bded25bea192a95303c3f92d0d4b2be6878` |
 | `catalogue/dev_curation_selected_2026-08-25.csv` | 11820 | `68e3aea2b31a9e05192325c505eb5fb78f309dbf5b9c87b927030e47cd7a129f` |
@@ -47,10 +47,10 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `catalogue/pixel_disjointness_test_A_2025_2026-08-25.csv` | 3481 | `ce2e9c1baf0e2aa465a112711adbd5568ee9038be6bbb52ba4363a15f109f64c` |
 | `catalogue/pixel_disjointness_test_A_2025_2026-08-25_drops.json` | 1851 | `df645cbe9d517966a165a5c1859cf160b6e71eb67074b59bca5fdb987a2c4a25` |
 | `catalogue/split_v6_2026-08-25.csv` | 8307 | `5cbbccc44d62bb1d92ec15fd590157da9d4c03762b3ee2eb5e51f15cd854e911` |
-| `CITATION.cff` | 4335 | `7064184f3bd8c9f978db59f487567a4e0a963b82a69cff33b45ad6cbbec96c06` |
+| `CITATION.cff` | 4407 | `6257947d430bbc38ca25ff27532a350fb6d441bcab79c6a3acb5353cc0439fd1` |
 | `docs/claims_to_evidence.md` | 7889 | `74d1cb7575661a81e75e47b4d0e322e938da21db2496c28cb4cc8adfc8da1a41` |
 | `docs/data_access.md` | 4453 | `711595a0b3ea00f848eb771146fa636623d3b989d8c471cab70b9722531ac9ff` |
-| `docs/integrity_hashes.md` | 15443 | `05577e5b1721aaa5bde3ac12639da551d03132a476e18fd43c30c925bbe33a42` |
+| `docs/integrity_hashes.md` | 15767 | `470d141e4aadf3852804c97b60342b3c8860a2d217f4dcf90804a9f2381ce134` |
 | `docs/reproducibility.md` | 5241 | `ced33d28fef9b2fa1d86c5307cad804089fbbd557799f37fe70542ec1799bee1` |
 | `figures/fig1_catalogue.pdf` | 43403 | `d8870fc8035eb61a7364fbbd57830daf1ad2c685623ec8b8ace72df8e077813f` |
 | `figures/fig2_framework.pdf` | 42949 | `ce9296e3077661968336a0cf6877ebc7e567c206d33a1464beb55dd4da4dda9b` |
@@ -83,7 +83,7 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `models/prt_ensemble_m2/seed_8_training_record.json` | 4419 | `23f159def2af60f99de0b5f534cd4df7736ad544a2e2081d308e4d57ab952c07` |
 | `models/prt_ensemble_m2/seed_9.pt` | 1068909 | `9cb79735814a097829bd8ba5cbe844c7e64435a470342aa1e58263c1a6536235` |
 | `models/prt_ensemble_m2/seed_9_training_record.json` | 4097 | `02cdafc3606f94cfd81361b26037dbd83ba0cd208e4ae76607f2417006509214` |
-| `README.md` | 8328 | `8ee35f29ad1370f314ae78dd5bd2717b7a62cd50132b14055c5bca9c8a9169fd` |
+| `README.md` | 8305 | `7ec394ca0c4d69e4cd804445e6205e2b374c52438203df8d032b36d0bebb8458` |
 | `registration/access_environment_lock.txt` | 342 | `3c602982003cc19e55f1d7d8937e304068ad25b7c7627fe7dba7d1ac5ba501e5` |
 | `registration/blockA_input_manifest.csv` | 11418 | `7163744d71085a1bdb3178b162d135265dfc316b367c1894d88f7e616e0122f0` |
 | `registration/DEC4_RATIFICATION_ANNEX_2026-08-28.md` | 3544 | `6db0e56b6563dc2596b347efcc479769b1b5fe9bf07a73f2ed84c13c777d54f7` |

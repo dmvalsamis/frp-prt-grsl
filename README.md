@@ -1,4 +1,4 @@
-# Sub-daily FRP forecasting over Mediterranean wildfires — reproduction package (2026 resubmission)
+# Sub-daily FRP forecasting over Mediterranean wildfires: reproduction package
 
 Code, pre-registration, model checkpoints and every per-event result behind the IEEE GRSL
 letter *"Sub-Daily Fire Radiative Power Forecasting over Mediterranean Wildfires: Pre-Registered

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, the model checkpoints or the reproduction materials, please cite the paper below."
-title: "Sub-daily FRP forecasting over Mediterranean wildfires — reproduction package (2026 resubmission)"
+title: "Sub-daily FRP forecasting over Mediterranean wildfires: reproduction package"
 abstract: >-
   Code, pre-registration, model checkpoints and per-event results for a study of
   sub-daily Fire Radiative Power forecasting over Mediterranean wildfires, driven
