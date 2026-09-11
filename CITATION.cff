@@ -14,6 +14,7 @@ license: MIT
 version: "2.0.0"
 date-released: "2026-09-11"
 repository-code: "https://github.com/dmvalsamis/frp-prt-grsl"
+doi: "10.5281/zenodo.20627736"   # concept DOI; resolves to the latest archived version
 authors:
   - family-names: "Valsamis"
     given-names: "Dimitrios"

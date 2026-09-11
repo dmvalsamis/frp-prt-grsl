@@ -50,10 +50,10 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `catalogue/pixel_disjointness_test_A_2025_2026-08-25.csv` | 3481 | `ce2e9c1baf0e2aa465a112711adbd5568ee9038be6bbb52ba4363a15f109f64c` |
 | `catalogue/pixel_disjointness_test_A_2025_2026-08-25_drops.json` | 1851 | `df645cbe9d517966a165a5c1859cf160b6e71eb67074b59bca5fdb987a2c4a25` |
 | `catalogue/split_v6_2026-08-25.csv` | 8307 | `5cbbccc44d62bb1d92ec15fd590157da9d4c03762b3ee2eb5e51f15cd854e911` |
-| `CITATION.cff` | 4507 | `4dbaf047c44998ac0275cd98aca838bc2e592e5c48a2c4f4c3261c07d054f2dd` |
+| `CITATION.cff` | 4596 | `3754a767f77ae19b6d3404d4e6a5935ea46897be7bed9c8464f37cfda014c7fd` |
 | `docs/claims_to_evidence.md` | 7889 | `74d1cb7575661a81e75e47b4d0e322e938da21db2496c28cb4cc8adfc8da1a41` |
 | `docs/data_access.md` | 4770 | `e1754b200690b493886ecfdabe0883d39971c9c327bf5fa246f74b50a684049c` |
-| `docs/integrity_hashes.md` | 15943 | `99fb79f4ad5397fe1b7d53f4e55a526f5e552c1749e9ecd9366879408692f565` |
+| `docs/integrity_hashes.md` | 15943 | `c5b7a051e5c232f662f5a3311ab4732cc4b6b25a4628d36a4a32bfa31b89d4a5` |
 | `docs/reproducibility.md` | 5342 | `52f2162838d8280ec3cb5d1ad7133841f413a55588c95d34dd28444d78c0add0` |
 | `figures/fig1_catalogue.pdf` | 43403 | `d8870fc8035eb61a7364fbbd57830daf1ad2c685623ec8b8ace72df8e077813f` |
 | `figures/fig2_framework.pdf` | 42949 | `ce9296e3077661968336a0cf6877ebc7e567c206d33a1464beb55dd4da4dda9b` |
@@ -86,7 +86,7 @@ find . -type f -not -path './.git/*' | sort | xargs sha256sum
 | `models/prt_ensemble_m2/seed_8_training_record.json` | 4419 | `23f159def2af60f99de0b5f534cd4df7736ad544a2e2081d308e4d57ab952c07` |
 | `models/prt_ensemble_m2/seed_9.pt` | 1068909 | `9cb79735814a097829bd8ba5cbe844c7e64435a470342aa1e58263c1a6536235` |
 | `models/prt_ensemble_m2/seed_9_training_record.json` | 4097 | `02cdafc3606f94cfd81361b26037dbd83ba0cd208e4ae76607f2417006509214` |
-| `README.md` | 8381 | `6b96760f1acae342729e8da1565530880369ca026b2e30685a4e607bdd21de76` |
+| `README.md` | 8544 | `648efb88c7344e1be10e8bc2ea4ccb5f06b7e4234592f159c5f2784197f18428` |
 | `registration/access_environment_lock.txt` | 342 | `3c602982003cc19e55f1d7d8937e304068ad25b7c7627fe7dba7d1ac5ba501e5` |
 | `registration/blockA_input_manifest.csv` | 11418 | `7163744d71085a1bdb3178b162d135265dfc316b367c1894d88f7e616e0122f0` |
 | `registration/DEC4_RATIFICATION_ANNEX_2026-08-28.md` | 3544 | `6db0e56b6563dc2596b347efcc479769b1b5fe9bf07a73f2ed84c13c777d54f7` |

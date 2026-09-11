@@ -10,6 +10,9 @@ version of the study whose four-event evaluation was not independent; it is pres
 untouched on the `main` branch and under tag `v1.0.0`, because the pre-registration of this
 study verifies one archived model against it. Nothing here overwrites it.
 
+Archived release: **[10.5281/zenodo.20627736](https://doi.org/10.5281/zenodo.20627736)** (concept DOI; always resolves to
+the latest version of this package).
+
 Derived data (the model-ready cube and the per-event hourly tables) is deposited separately:
 **[10.5281/zenodo.22705927](https://doi.org/10.5281/zenodo.22705927)** (v3, 162 events). The concept DOI
 [10.5281/zenodo.20627568](https://doi.org/10.5281/zenodo.20627568) always resolves to the latest version.
